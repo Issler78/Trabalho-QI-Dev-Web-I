@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Margarine&display=swap');
+
+body {
+    font-family: "Margarine", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: 30px 30px;
+    min-height: 600px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+hr {
+    border: 3px solid #011d54;
+}
+
+.items {
+    width: 100%;
+}
+
+thead {
+    background: #011d54;
+    color: #fff;
+}
+
+th {
+    padding: 10px;
+}
+
+tr {
+    box-shadow: 0 2px 0 0 #011d54;
+}
+
+.produto-td {
+    padding: 10px 0;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.produto-td p {
+    margin: 5px 0;
+}
+
+.width-th {
+    width: 200px;
+}
+
+.center-td {
+    text-align: center;
+    margin: auto;
+}
+
+.preco {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input-quantidade {
+    background: #fff;
+    color: black;
+    box-shadow: 0 1px 0 #000;
+    border: none;
+    font-size: 18px;
+    width: 30px;
+    margin: 0 10px 0 10px;
+    text-align: center;
+}
+
+.input-quantidade:focus-visible {
+    outline: none;
+}
+
+.input-quantidade::-webkit-outer-spin-button,
+.input-quantidade::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.input-mudar-quantidade {
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.input-mudar-quantidade:hover {
+    cursor: pointer;
+}
+
+.baixo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total {
+    margin-top: 10px;
+}
+
+.total p {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+.total #preco-total {
+    margin-top: 0;
+    font-weight: bold;
+    color: #011d54;
+    font-size: 36px;
+}
+
+.btn {
+    width: 190px;
+    padding: 15px;
+    font-family: "Margarine", sans-serif;
+    font-size: 18px;
+    background: #efff0b;
+    border: none;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: #d7e60b;
+}
+
+@media(max-width: 650px){
+    .items{
+        scale: 0.9;
+    }
+    .th-preco{
+        display: none;
+    }
+    .td-preco{
+        display: none;
+    }
+    .total #preco-total {
+        font-size: 28px;
+    }
+}

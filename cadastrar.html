@@ -1,0 +1,40 @@
+<!Doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta lang="pt-br">
+        <script src="https://kit.fontawesome.com/8782a700f2.js" crossorigin="anonymous"></script>
+		<title>Cadastrar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/logincadastro.css">
+	</head>
+    <body>
+        <div class="container">
+            <h1>Crie Sua Conta</h1>
+            <p>Preencha os campos para continuar</p>
+            <form action="index.html" id="form">
+                <div class="form-input">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" required placeholder="Nome completo" id="nome">
+                </div>
+                <div class="form-input">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" required placeholder="exemplo@gmail.com" id="email">
+                </div>
+                <div class="form-input">
+                    <label for="password">Senha:</label>
+                    <input type="password" name="password" required placeholder="Min 6 caracteres" id="senha" minlength="6">
+                </div>
+                <div class="actions">
+                    <div>
+                        <input type="checkbox" name="lembrar">
+                        <label for="lembrar">Lembre-me</label>
+                    </div>
+                </div>
+                <button type="submit" class="form-btn">Cadastrar</button>
+            </form>
+            <p>Já tem uma conta? <a href="entrar.html">Entre</a></p>
+        </div>
+
+        <script src="js/cadastro.js"></script>
+    </body>
+</html>

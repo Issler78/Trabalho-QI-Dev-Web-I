@@ -1,0 +1,71 @@
+<!Doctype html>
+	<head>
+		<meta charset="utf-8">
+		<meta lang="pt-br">
+        <script src="https://kit.fontawesome.com/8782a700f2.js" crossorigin="anonymous"></script>
+		<title>Meu Carrinho</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/carrinho.css">
+        <link rel="stylesheet" href="css/footer.css">
+	</head>
+    <body>
+        <header>
+            <nav class="menu">
+                <div class="empresa">Só Rabisco <i class="fa-solid fa-lines-leaning"></i></div>
+                <div class="links">
+                    <a href="index.html">Início</a>
+                    <a href="index.html?categoria=Caderno" class="categoria">Cadernos</a>
+                    <a href="index.html?categoria=Escrita" class="categoria">Escrita</a>
+                    <a href="index.html?categoria=Escritório" class="categoria">Escritório</a>
+                    <a href="quemsomos.html">Quem Somos</a>
+                </div>
+
+                <div class="menu-icons">
+                    <div class="usuario">
+                        <a href="entrar.html">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                    </div>
+                    <div class="carrinho">
+                        <a href="carrinho.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Meu Carrinho</h1>
+            <hr>
+            <table class="items">
+                <thead>
+                    <th>Produto</th>
+                    <th class="width-th">Quantidade</th>
+                    <th class="width-th th-preco">Preço</th>
+                    <th class="width-th">Total</th>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+
+            <hr>
+
+            <div class="baixo">
+                <div class="total">
+                    <p>Total: </p>
+                    <p id="preco-total">R$ 0,00</p>
+                </div>
+                <button type="button" class="btn">Continuar</button>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>Copyright <i class="fa-regular fa-copyright"></i> 2026 - Matheus & Isadora</p> 
+        </footer>
+    </body>
+    <script src="js/carrinho.js"></script>
+</html>
