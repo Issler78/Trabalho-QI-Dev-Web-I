@@ -18,25 +18,36 @@
         <link rel="stylesheet" href="css/footer.css">
 	</head>
     <body>
+        <!-- Div para a mensagem dinâmica (JavaScipt é quem irá colocar um <p> dentro dela) -->
         <div id="mensagem">
             
         </div>
 
+        <!-- Parte de cima da pagina (navbar, imagem volta as aulas e submenu amarelo) -->
         <header>
+            <!-- barra de navegação / navbar -->
             <nav class="menu">
+
+                <!-- nome da empresa na navbar -->
                 <div class="empresa">Só Rabisco <i class="fa-solid fa-lines-leaning"></i></div>
+
+                <!-- links de navegação -->
                 <div class="links">
                     <a href="index.html">Início</a>
+
+                    <!-- links para as categorias (?categoria = JavaScript saberá qual categoria de produto precisará mostrar com base na URL/link da pagina) -->
                     <a href="?categoria=Caderno" class="categoria">Cadernos</a>
                     <a href="?categoria=Escrita" class="categoria">Escrita</a>
                     <a href="?categoria=Escritório" class="categoria">Escritório</a>
+
                     <a href="quemsomos.html">Quem Somos</a>
                 </div>
 
+                <!-- Parte dos icones para logar e icone do carrinho -->
                 <div class="menu-icons">
                     <div class="usuario">
                         <a href="entrar.html">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-user"></i> <!-- <a> link com um icone -->
                         </a>
                     </div>
                     <div class="carrinho">
@@ -47,8 +58,10 @@
                 </div>
             </nav>
 
+            <!-- imagem de volta as aulas -->
             <img src="img/voltaasaulas.png" alt="Volta as aulas" width="100%" height="650px">
 
+            <!-- submenu amarelo -->
             <div class="submenu">
                 <div class="info">
                     <i class="fa-solid fa-truck-fast"></i>
@@ -66,6 +79,7 @@
         </header>
 
         <main>
+            <!-- div items vazia, pois o JavaScript adicionará os produtos nela -->
             <div id="items">
                 
             </div>
@@ -75,6 +89,7 @@
             <p>Copyright <i class="fa-regular fa-copyright"></i> 2026 - Matheus & Isadora</p> 
         </footer>
 
+        <!-- icone do whatsapp na tela -->
         <div class="whatsapp">
             <a href="https://wa.me/5554996573462" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>

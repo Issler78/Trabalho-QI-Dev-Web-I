@@ -16,27 +16,33 @@ h1 {
     margin: 0;
 }
 
+/* estilo da divisoria */
 hr {
     border: 3px solid #011d54;
 }
 
-.items {
+/* estilo da tabela */
+table {
     width: 100%;
 }
 
+/* estilo da parte de cima da tabela (parte azul) */
 thead {
     background: #011d54;
     color: #fff;
 }
 
+/* estilo de cada parte, da parte de cima da tabela (cada coluna) */
 th {
     padding: 10px;
 }
 
+/* estilo de cada linha da tabela */
 tr {
     box-shadow: 0 2px 0 0 #011d54;
 }
 
+/* estilo da coluna de produto (das linhas abaixo) */
 .produto-td {
     padding: 10px 0;
     display: flex;
@@ -59,11 +65,13 @@ tr {
     margin: auto;
 }
 
+/* estilo da coluna de preco (das linhas abaixo) */
 .preco {
     font-weight: bold;
     font-size: 20px;
 }
 
+/* estilo do input de quantidade */
 .input-quantidade {
     background: #fff;
     color: black;
@@ -79,12 +87,14 @@ tr {
     outline: none;
 }
 
+/* desabilitar acoes do input numerico */
 .input-quantidade::-webkit-outer-spin-button,
 .input-quantidade::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
+/* estilo dos botoes de - e + da quantidade */
 .input-mudar-quantidade {
     font-size: 18px;
     border-radius: 5px;
@@ -116,6 +126,7 @@ tr {
     font-size: 36px;
 }
 
+/* estilo do botao de continuar */
 .btn {
     width: 190px;
     padding: 15px;
@@ -132,6 +143,7 @@ tr {
     background: #d7e60b;
 }
 
+/* para telas menores */
 @media(max-width: 650px){
     .items{
         scale: 0.9;
@@ -144,5 +156,15 @@ tr {
     }
     .total #preco-total {
         font-size: 28px;
+    }
+    .produto-td{
+        flex-direction: column;
+    }
+    .width-th {
+        width: 150px;
+    }
+    .baixo{
+        flex-direction: column;
+        gap: 10px;
     }
 }

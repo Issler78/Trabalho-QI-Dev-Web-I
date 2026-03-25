@@ -10,21 +10,30 @@
         <link rel="stylesheet" href="css/footer.css">
 	</head>
     <body>
+        <!-- Parte de cima da pagina (navbar) -->
         <header>
             <nav class="menu">
+
+                <!-- nome da empresa na navbar -->
                 <div class="empresa">Só Rabisco <i class="fa-solid fa-lines-leaning"></i></div>
+
+                <!-- links de navegação -->
                 <div class="links">
                     <a href="index.html">Início</a>
-                    <a href="index.html?categoria=Caderno" class="categoria">Cadernos</a>
-                    <a href="index.html?categoria=Escrita" class="categoria">Escrita</a>
-                    <a href="index.html?categoria=Escritório" class="categoria">Escritório</a>
+
+                    <!-- links para as categorias (?categoria = JavaScript saberá qual categoria de produto precisará mostrar com base na URL/link da pagina) -->
+                    <a href="?categoria=Caderno" class="categoria">Cadernos</a>
+                    <a href="?categoria=Escrita" class="categoria">Escrita</a>
+                    <a href="?categoria=Escritório" class="categoria">Escritório</a>
+
                     <a href="quemsomos.html">Quem Somos</a>
                 </div>
 
+                <!-- Parte dos icones para logar e icone do carrinho -->
                 <div class="menu-icons">
                     <div class="usuario">
                         <a href="entrar.html">
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-solid fa-user"></i> <!-- <a> link com um icone -->
                         </a>
                     </div>
                     <div class="carrinho">
@@ -38,14 +47,21 @@
 
         <main>
             <h1>Meu Carrinho</h1>
+            <!-- divisória para a tabela -->
             <hr>
-            <table class="items">
+
+            <!-- tabela com os items do carrinho -->
+            <table>
+
+                <!-- parte de cima da tabela, definindo quais sao suas colunas -->
                 <thead>
                     <th>Produto</th>
                     <th class="width-th">Quantidade</th>
                     <th class="width-th th-preco">Preço</th>
                     <th class="width-th">Total</th>
                 </thead>
+
+                <!-- parte onde o JavaScript adicionará os items do carrinho salvo (parte dos valores/linhas da tabela) -->
                 <tbody id="tbody">
 
                 </tbody>
@@ -53,6 +69,7 @@
 
             <hr>
 
+            <!-- parte do total e do botao continuar -->
             <div class="baixo">
                 <div class="total">
                     <p>Total: </p>

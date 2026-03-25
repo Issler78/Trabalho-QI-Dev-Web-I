@@ -8,11 +8,15 @@
         <link rel="stylesheet" href="css/logincadastro.css">
 	</head>
     <body>
+        <!-- div do container onde tem o formulario (quadrado branco em volta de tudo) -->
         <div class="container">
             <h1>Crie Sua Conta</h1>
             <p>Preencha os campos para continuar</p>
+            <!-- formulario de cadastro -->
             <form action="index.html" id="form">
+                <!-- divs dos inputs/campos do formulario -->
                 <div class="form-input">
+                    <!-- input required para bloquear passar sem valor -->
                     <label for="nome">Nome</label>
                     <input type="text" name="nome" required placeholder="Nome completo" id="nome">
                 </div>
@@ -24,14 +28,18 @@
                     <label for="password">Senha:</label>
                     <input type="password" name="password" required placeholder="Min 6 caracteres" id="senha" minlength="6">
                 </div>
+                <!-- div com as acoes possiveis -->
                 <div class="actions">
+                    <!-- input "lembre-me" -->
                     <div>
                         <input type="checkbox" name="lembrar">
                         <label for="lembrar">Lembre-me</label>
                     </div>
                 </div>
+                <!-- botao de cadastrar -->
                 <button type="submit" class="form-btn">Cadastrar</button>
             </form>
+            <!-- link para a tela de login -->
             <p>Já tem uma conta? <a href="entrar.html">Entre</a></p>
         </div>
 

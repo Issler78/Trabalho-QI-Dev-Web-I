@@ -6,13 +6,14 @@ body{
     margin: 0;
 }
 
+/* mensagem de Bem vindo ou de Produto adicionado ao carrinho */
 #mensagem{
-    position: fixed;
+    position: fixed; /* posicao fixa na tela, na parte superior */
     z-index: 1;
-    display: none;
+    display: none; /* JavaScript fara aparecer */
     left: 50%;
     top: 10px;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, 0); /* ficar no meio da tela */
     padding: 0 50px;
     background-color: greenyellow;
     border-bottom: 5px solid rgb(129, 202, 20);
@@ -21,10 +22,13 @@ body{
     text-align: center;
 }
 
+/* imagem de volta as aulas */
 header .img{
     width: 100%;
     height: 500px;
 }
+
+/* submenu amarelo */
 .submenu{
     width: 100%;
     height: 60px;
@@ -33,8 +37,9 @@ header .img{
     justify-content: space-around;
     align-items: center;
 }
+/* cada informacao do submenu */
 .submenu .info{
-    display: flex;
+    display: flex; /* para ficar um do lado do outro (icone + paragrafo) */
     align-items: center;
     gap: 10px;
 }
@@ -49,16 +54,19 @@ main{
     margin: 50px auto;
     padding: 0 150px;
 }
+/* div dos items / lugar onde os produtos estarao */
 #items{
-    display: flex;
+    display: flex; /* display flex com flex wrap para quebrar a linha, e deixar os produtos com a mesma quantidade em cada linha quando possivel */
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     margin: auto;
     gap: 40px;
 }
+
+/* para cada produto */
 .item{
-    display: flex;
+    display: flex; /* para deixar na ordem, de cima para baixo: imagem do produto, nome, preco e botao */
     position: relative;
     flex-direction: column;
     justify-content: space-between;
@@ -75,6 +83,8 @@ main{
 .item img{
     margin-top: 20px;
 }
+
+/* categoria em azul no produto */
 .item .categoria{
     padding: 5px 20px;
     border-radius: 10px;
@@ -101,6 +111,8 @@ main{
     font-weight: bold;
     font-size: 20px;
 }
+
+/* botao de adicionar no carrinho */
 .add-btn{
     width: 100%;
     height: 40px;
@@ -116,8 +128,9 @@ main{
     background: #d7e60b;
 }
 
+/* icone do whatsapp */
 .whatsapp{
-    position:fixed;
+    position:fixed; /* para deixar flutuando na parte de baixo da tela */
     bottom: 30px;
     right: 40px;
     transition: .3s;
@@ -132,6 +145,7 @@ main{
     font-size: 50px;
 }
 
+/* para telas como tablet */
 @media(max-width: 900px){
     #items{
         gap: 20px;
@@ -145,7 +159,7 @@ main{
     }
 }
 
-/* celular */
+/* para telas como celular */
 @media(max-width: 650px){
     main{
         padding: 0;
